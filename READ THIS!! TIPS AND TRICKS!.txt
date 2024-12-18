@@ -1,0 +1,19 @@
+When you are looking through this code keep the following things in mind!
+
+Every function has a return(); statement of some kind. That return statement is what is being displayed and is made up of html code. Anything you want to be displayed should be put in here. If you want to add a JavaScript variable in the return section, just put it inside curly brackets.
+
+
+#########################################################################################################################################################################
+
+
+To keep track of everything, I included a folder called pages to hold all of my extra files. When you are importing a function from another file, your import statement looks something like this: 
+		import FunctionName from './pages/filename';
+
+the path that you include is the path to get to that file FROM the file that you are currently in. So if I wanted to import ViewAllPosts into my Login File, my import would look like:
+		 import ViewAllPosts from './ViewAllPosts';
+
+This is because ViewAllPosts and Login are both in the pages folder, you don't need to include the /pages/ in the filename. Because App.js is not inside pages, you have to include /pages/ so it knows where to go.
+
+
+########################################################################################################################################################################
+
